@@ -1,2 +1,2 @@
 # my-portfilio
-next js , tailwind ...
+Hadil Meddeb , Software engineer , portfolio website , using react js

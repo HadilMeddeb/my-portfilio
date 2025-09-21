@@ -287,32 +287,32 @@ export const Bio = {
   ];
   
   export const education = [
-    {
+      {
       id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-      school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-      date: "Oct 2021 - Sep 2025",
-      grade: "8.71 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-      degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9a45-KXV32g7AcuYFtRqbas8BMG2Nansr6g&s",
+      school: "Higher Institute of Applied Sciences and Technology of Sousse  (ISSAT Sousse) ",
+      date: "sept 2021 - jun 2023",
+      grade: "with honors",
+      desc: "I hold a Software Engineering degree from ISSAT Sousse University. During my studies, I completed five semesters covering a wide range of fields and technologies, each reinforced by practical projects. My coursework included Machine Learning, Deep Learning, Computer Vision, Web Development, Mobile Development, Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I concluded my program with a nine-month end-of-studies internship, which served as the capstone project required to validate my degree.",
+      degree: "Engineering Degree in Software Engineering",
     },
     {
       id: 1,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2019 - Apr 2025",
-      grade: "88.2%",
-      desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-      degree: "ISC(XII), Science with Computer",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9a45-KXV32g7AcuYFtRqbas8BMG2Nansr6g&s",
+      school: "Higher Institute of Applied Sciences and Technology of Sousse  (ISSAT Sousse)",
+      date: "sept 2019 - jun 2023",
+      grade: "with honors",
+      desc: "I completed four semesters in the Integrated Preparatory Program (MPI), where I received courses in mathematics, physics, and programming in C, C++, and Java, as well as training in Linux operating systems, SQL databases, object-oriented programming, networking, software design, and web development (HTML, CSS, etc.). This program served as a strong foundation and preparation for the engineering cycle.",
+      degree: "Integrated Preparatory Program  MPI",
     },
     {
       id: 2,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+      img: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ksibet_El_Mediouni_Secondary_school.JPG",
       school: "Methodist School, Dankuni",
       date: "Apr 2017 - Apr 2019",
-      grade: "92.3%",
+      grade: "with honors",
       desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-      degree: "ICSC(X), Science with Computer",
+      degree: "Baccalaureate diploma in Experimental Sciences",
     },
   ];
   

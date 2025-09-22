@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/HeroSection';
 import Skills from './components/Skills';
+import Services from "./components/Services";
 
 const Body = styled.div`
 background-color: ${({theme})=>theme.bg};
@@ -41,10 +42,12 @@ function App() {
            <Hero />
          </Wrapper>
          <About/>
-         <Skills/>
+         <Services/>
            <Projects  openModal={openModal} setOpenModal={setOpenModal}  />
           <Wrapper>
+            <Experience/>
             <Education />
+               <Skills/>
             <Contact />
           </Wrapper>
           <Footer />

@@ -24,7 +24,7 @@ export default function Hero() {
             I am a full stack Developper focused on creating IOS mobile and web
             Applications that offers the best experience
           </DescriptionText>
-          <button className="btn-3d">get my cv</button>
+       <a  className="btn-3d" href="assets/CV-Hadil-Meddeb.pdf" download>get my cv</a>
         </ContentContainer>
         <img
           className="side-icon"

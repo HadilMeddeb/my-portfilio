@@ -5,6 +5,7 @@ margin: 30px;
 }
 
 .btn-3d {
+    text-decoration: none;
     font-size: 18px;
     max-width: 220px;
     font-weight: 600;

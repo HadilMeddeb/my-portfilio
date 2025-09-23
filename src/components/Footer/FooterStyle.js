@@ -51,11 +51,13 @@ export const PrivacyPolicy = styled.div`
   }
 `;
 
+
 export const Row = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
 `;
+
 
 export const Column = styled.div`
   height: 200px;
@@ -71,6 +73,7 @@ export const Column = styled.div`
     justify-content: center;
   }
 `;
+
 
 export const PolicyTerms = styled.div`
   display: flex;
@@ -94,6 +97,7 @@ export const ContactInfos = styled.div`
     align-items: center;
   }
 `;
+
 export const FooterAbout = styled.div`
   font-size: 16px;
   font-weight: 400;

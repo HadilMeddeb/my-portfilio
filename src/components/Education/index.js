@@ -8,6 +8,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education, experiences } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard.js';
+import './style.css'
 
 const Container = styled.div`
     display: flex;
@@ -80,7 +81,7 @@ const index = () => {
     return (
         <Container id="education">
             <Wrapper>
-                <Title>Education</Title>
+                <Title> <span className='titleSpan'>My</span> Education</Title>
                 <Desc>
                     My education has been a journey of self-discovery and growth. My educational details are as follows.
                 </Desc>
@@ -93,7 +94,7 @@ const index = () => {
                                 </TimelineContent>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    {<TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                             </TimelineItem>
                         ))}

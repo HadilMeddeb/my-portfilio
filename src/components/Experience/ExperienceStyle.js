@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ExperienceContainer = styled.div`
   height: 90vh;
+    @media (max-width: 768px) {
+ height: auto;
+    padding: 20px;
+  }
 `;
 
 export const ExperienceTitle = styled.div`
@@ -30,7 +34,9 @@ export const ExperienceSubTitle2 = styled.div`
 export const ExperienceCarousal = styled.div``;
 export const ExperienceItem = styled.div`
   width: 60%;
-
+  @media (max-width: 1200px) {
+  width: 100%;
+  }
 `;
 
 export const Technologies = styled.div`
@@ -57,4 +63,10 @@ export const TechsContainer = styled.div`
   gap: 20px;
   width: 35%;   /* or 100% if you want full width */
   justify-items: center;  /* centers each logo horizontally */
+  @media (max-width: 1200px) {
+  display: none;
+  }
+    @media (max-width: 1620px) {
+  grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
+  }
 `;

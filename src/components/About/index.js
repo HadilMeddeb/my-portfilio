@@ -3,26 +3,54 @@ import {
   AboutContent,
   AboutTitle,
   AboutTitleMe,
-  Center,
-  Divider,
+  AboutContainer,
+  AboutText,
+  AboutImage,
+  AboutSectionTitle,
+  Tiret,
+  HireButton,
 } from "./AboutStyles";
-import { Container } from "@mui/material";
+import "./style.css";
 
 export default function About() {
   return (
-    <Container>
-      <Center>
-        <AboutTitle>
-          About <AboutTitleMe>Me</AboutTitleMe>
-        </AboutTitle>
-       {/* <Divider></Divider> */}
+    <AboutContainer id="about">
+
         <AboutContent>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          <AboutText>
+            <AboutSectionTitle>
+              {" "}
+              <Tiret></Tiret> -- About Me
+            </AboutSectionTitle>
+            <AboutTitle>
+              <AboutTitleMe> Who is</AboutTitleMe> Hadil Meddeb ?
+            </AboutTitle>
+            <div>
+              As a dedicated software engineer, I specialize in crafting
+              efficient and scalable solutions that solve real-world problems.
+              My passion lies in full-stack development, where I leverage modern
+              frameworks like React and Node.js to build robust web
+              applications, backed by strong skills in Python and cloud
+              platforms. I am committed to writing clean, maintainable code and
+              continuously learning to adapt to the ever-evolving tech
+              landscape. Explore my work to see how I transform ideas into
+              functional, impactful software.
+            </div>
+            <a href="#contact">
+              {" "}
+              <HireButton> Hire Me</HireButton>{" "}
+            </a>
+          </AboutText>
+
+          <AboutImage>
+            <img
+              className="about-img"
+              src="assets/hero-section/aboutSection-img.png"
+              alt="About Me"
+            />
+          </AboutImage>
         </AboutContent>
-      </Center>
-    </Container>
+
+    </AboutContainer>
   );
 }

@@ -25,7 +25,7 @@ export default function SkillsSection() {
   const doubledSkills = [...skillsItems, ...skillsItems];
 
   return (
-    <MainContainer>
+    <MainContainer id="skills">
       <SkillsTitle>My Skills</SkillsTitle>
       <SkillsWrapper>
         <ListSkills>

@@ -106,3 +106,15 @@ export const ButtonContainer = styled.div`
     display: none;
   }
 `;
+
+export const MobileIcon = styled.button`
+background: none;
+border: none;
+  display: none;  
+  color:#ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+    display: block;
+  } `;

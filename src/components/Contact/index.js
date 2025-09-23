@@ -11,9 +11,9 @@ justify-content: center;
 position: relative;
 z-index: 1;
 align-items: center;
-@media (max-width: 960px) {
-    padding: 0px;
-}
+height: 100vh;
+padding:10px;
+
 `
 
 const Wrapper = styled.div`
@@ -66,6 +66,12 @@ const ContactForm = styled.form`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
+      @media (max-width: 768px) {
+         max-width: 500px;
+    }
+            @media (max-width: 600px) {
+         max-width: 400px;
+    }
 `
 
 const ContactTitle = styled.div`
@@ -142,7 +148,7 @@ const Contact = () => {
 
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>

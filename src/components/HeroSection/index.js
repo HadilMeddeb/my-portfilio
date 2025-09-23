@@ -1,4 +1,4 @@
-import React from "react";
+import { Bio } from "../../data/constants";
 import {
   Container,
   HiItem,
@@ -21,10 +21,13 @@ export default function Hero() {
           <HiItem>Hi, I am</HiItem>
           <EngineerName>Hadil Meddeb</EngineerName>
           <DescriptionText>
-            I am a full stack Developper focused on creating IOS mobile and web
-            Applications that offers the best experience
+            {/* I am a full stack Developper focused on creating IOS mobile and web
+            Applications that offers the best experience */}
+            {Bio.description}
           </DescriptionText>
-       <a  className="btn-3d" href="assets/CV-Hadil-Meddeb.pdf" download>get my cv</a>
+          <a className="btn-3d" href="assets/CV-Hadil-Meddeb.pdf" download>
+            get my cv
+          </a>
         </ContentContainer>
         <img
           className="side-icon"

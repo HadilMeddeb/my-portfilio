@@ -10,13 +10,13 @@ import {
 } from "./ExperienceStyle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination"
 import "./style.css";
-import { Navigation } from "swiper/modules";
+import {  Pagination } from "swiper/modules";
 
 export default function Experience() {
   const experiences = [
-        {
+    {
       position: "Fullstack JS Developer / IOS Mobile Developer",
       type: "Full time job",
       technologies: [
@@ -27,7 +27,6 @@ export default function Experience() {
         { name: "Next", logo: "assets/skills/Next_icon.png" },
         { name: "express.js", logo: "assets/skills/express.svg" },
         { name: "Next.ts", logo: "assets/skills/Next_icon.png" },
-        { name: "javascript", logo: "assets/skills/javascript_icon.webp" },
         { name: "Typescript", logo: "assets/skills/Typescript_icon.webp" },
         { name: "Nginx", logo: "assets/skills/Nginx_icon.png" },
         { name: "Swift", logo: "assets/skills/swift_icon.webp" },
@@ -36,7 +35,7 @@ export default function Experience() {
         { name: "ci/cd pipeline", logo: "assets/skills/ci_cd.png" },
         { name: "Jenkins", logo: "assets/skills/jenkins.png" },
         { name: "docker", logo: "assets/skills/docker.png" },
-           { name: "Git", logo: "assets/skills/Git_icon.png" },
+        { name: "Git", logo: "assets/skills/Git_icon.png" },
       ],
       details:
         "Contributing to the development , maintenance and deployment of full-stack js applications and browser extensions as well as Buiding a full-featured iOS video hub app with Swift/SwiftUI, implementing recording, editing, feed algorithms, authentication, and content moderation. Managed end-to-end deployment and App Store release",
@@ -47,7 +46,7 @@ export default function Experience() {
       startDate: "August 2023",
       endDate: "March 2024",
     },
-      {
+    {
       position: "Frontend Developer",
       type: "Full time job",
       technologies: [
@@ -57,7 +56,7 @@ export default function Experience() {
         { name: "electron.js", logo: "assets/skills/electron.png" },
         { name: "Flask", logo: "assets/skills/flask_icon.png" },
         { name: "Scrum", logo: "assets/skills/scrum.webp" },
-             { name: "Git", logo: "assets/skills/Git_icon.png" },
+        { name: "Git", logo: "assets/skills/Git_icon.png" },
       ],
       details:
         "Collaborating with a German startup team to develop and maintain responsive front-end interfaces for projects related to edTech that concists in transforming selected text sections from an uploaded pdfs into animated videos",
@@ -78,7 +77,7 @@ export default function Experience() {
         { name: "JWT", logo: "assets/skills/jwt.svg" },
         { name: "express.js", logo: "assets/skills/express.svg" },
         { name: "restful API", logo: "assets/skills/rest_api.webp" },
-             { name: "Git", logo: "assets/skills/Git_icon.png" },
+        { name: "Git", logo: "assets/skills/Git_icon.png" },
       ],
       details:
         "Development of a web-based task tracking application for an IT services company, including : task management, project versions management, Workspaces management, meetings management through voting, minutes generation using either a text editor or voice input, integration with Trello, real-time notifications...",
@@ -97,7 +96,7 @@ export default function Experience() {
         { name: "Nx", logo: "assets/skills/nx.png" },
         { name: "Nexus", logo: "assets/skills/nexus.png" },
         { name: "npm", logo: "assets/skills/npm.png" },
-             { name: "Git", logo: "assets/skills/Git_icon.png" },
+        { name: "Git", logo: "assets/skills/Git_icon.png" },
       ],
       details: "Built and published a reusable Angular 14 library",
       company: "Barthauer Software Tunisia",
@@ -116,9 +115,9 @@ export default function Experience() {
         { name: "JWT", logo: "assets/skills/jwt.svg" },
         { name: "express.js", logo: "assets/skills/express.svg" },
         { name: "restful API", logo: "assets/skills/rest_api.webp" },
-             { name: "Git", logo: "assets/skills/Git_icon.png" },
+        { name: "Git", logo: "assets/skills/Git_icon.png" },
       ],
-      details: " Built an employee time-tracking web app",
+      details: "Development of a web application for managing employee time tracking, aimed at monitoring employees’ working hours using their time punches",
       company: "ACOBA",
       companyLogo: "assets/experience/acoba.png",
       place: "Moknine, Monastir, Tunisia",
@@ -126,16 +125,16 @@ export default function Experience() {
       startDate: "july 2021",
       endDate: "September 2021",
     },
-        {
+    {
       position: "FullStack JS Developer",
       type: "Internship",
       technologies: [
-         { name: "Angular", logo: "assets/skills/Angular_icon.png" },
+        { name: "Angular", logo: "assets/skills/Angular_icon.png" },
         { name: "Node.js", logo: "assets/skills/node_icon.webp" },
         { name: "JWT", logo: "assets/skills/jwt.svg" },
         { name: "express.js", logo: "assets/skills/express.svg" },
         { name: "restful API", logo: "assets/skills/rest_api.webp" },
-             { name: "Git", logo: "assets/skills/Git_icon.png" },
+        { name: "Git", logo: "assets/skills/Git_icon.png" },
       ],
       details: "Developed a stock management CRUD app",
       company: "it Gate group",
@@ -145,10 +144,9 @@ export default function Experience() {
       startDate: "1 August 2021",
       endDate: "31 August 2021",
     },
-  
   ];
   return (
-    <ExperienceContainer>
+    <ExperienceContainer id="experience">
       <ExperienceTitle>
         <span className="titleSpan">My </span>Experience
       </ExperienceTitle>
@@ -158,7 +156,10 @@ export default function Experience() {
         needs
       </ExperienceSubTitle2>
 
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper
+      pagination={true} modules={[Pagination]}
+      className ="mySwiper" // dots always enabled
+    >
         {experiences.map((experience) => {
           return (
             <SwiperSlide>

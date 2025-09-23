@@ -5,7 +5,10 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height:90vh;
+  height: 90vh;
+    @media (max-width: 1200px) {
+    height: auto;
+    }
 `;
 export const ServicesTitle = styled.div`
   margin-bottom: 30px;
@@ -28,11 +31,15 @@ export const ServiceSubTitle2 = styled.div`
   text-decoration: inline;
   color: #959393ff;
   text-align: center;
-`
+`;
 
 export const ServicesList = styled.div`
   display: inline-flex;
   gap: 20px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 export const ServiceItem = styled.div`
@@ -62,6 +69,11 @@ export const ServiceItem = styled.div`
       rgba(40, 11, 87, 1) 100%
     );
   }
+
+     @media (max-width: 1300px) {
+     padding: 20px 10px;
+     }
+     
 `;
 
 export const ServiceItemTechs = styled.div`

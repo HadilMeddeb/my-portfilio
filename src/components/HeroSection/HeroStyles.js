@@ -45,6 +45,7 @@ export const HiItem = styled.div`
   text-align: center;
 `;
 
+
 export const EngineerName = styled.div`
   font-size: 70px;
   color: #db7140;
@@ -52,7 +53,17 @@ export const EngineerName = styled.div`
   margin-bottom: 10px;
   text-align: center;
   letter-spacing: 3px;
+
+  /* Typewriter effect */
+  display: inline-block; /* important for width animation */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #db7140; /* cursor */
+    @media (max-width: 1024px) {
+    
+    font-size: 50px;}
 `;
+
 
 export const DescriptionText = styled.div`
   font-size: 22px;

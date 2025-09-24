@@ -9,12 +9,14 @@ export const ExperienceContainer = styled.div`
 `;
 
 export const ExperienceTitle = styled.div`
-  margin-bottom: 30px;
+  margin: 20px 0px;
+margin-top: 50px;
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
 `;
+
 export const ExperienceSubTitle = styled.div`
   margin-bottom: 15px;
   font-size: 25px;

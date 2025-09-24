@@ -7,7 +7,7 @@ export const Bio = {
     ],
     description:
     "I am a Fullstack JavaScript and iOS Developer, passionate about learning and driven to deliver high-quality results. Always eager for new challenges, I strive to make a meaningful impact."
-,
+, 
     github: "https://github.com/HadilMeddeb",
     resume:
       "assets/CV-Hadil-Meddeb.pdf",
@@ -156,56 +156,25 @@ export const Bio = {
   export const projects = [
     {
       id: 9,
-      title: "Trackify",
-      date: "Jun 2023 - Jul 2023",
-      description:
-        "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      title: "GPROTasker",
+      date: "April 2023 - August 2023",
+      description:" web-based task tracking application for an IT services company, including : task management,project versions management, Workspaces management, meetings management through voting, minutesgeneration using either a text editor or voice input, integration with Trello, real-time notifications...",
+       demo:"assets/projects/GPRO-Tasker.mp4",
       image:
-        "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+        "assets/projects/gproTasker.png",
       tags: [
-        "Docker",
-        "AWS",
-        "DuckDNS",
-        "Eslint",
-        "Husky",
-        "CI/CD",
-        "React Js",
+        "Restful API",
+        "Angular",
         "MongoDb",
         "Node Js",
-        "Express Js",
-        "Redux",
+        "socket.io",
+        "Trello API",
       ],
       category: "web app",
-      github: "https://github.com/rishavchanda/Trackify",
-      webapp: "https://trackify.duckdns.org",
+      github: "https://github.com/HadilMeddeb/TaskTraking_frontend",
+      webapp: "",
     },
-    {
-      id: 0,
-      title: "Podstream",
-      date: "Apr 2023 - May 2023",
-      description:
-        "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-      image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-      category: "web app",
-      github: "https://github.com/rishavchanda/Podstream",
-      webapp: "https://podstream.netlify.app/",
-      member: [
-        {
-          name: "Rishav Chanda",
-          img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-          linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-          github: "https://github.com/rishavchanda/",
-        },
-        {
-          name: "Upasana Chaudhuri",
-          img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-          linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-          github: "https://github.com/upasana0710",
-        },
-      ],
-    },
+
    
   ];
   

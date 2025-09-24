@@ -1,4 +1,5 @@
 import { Bio } from "../../data/constants";
+import { Typewriter } from "react-simple-typewriter";
 import {
   Container,
   HiItem,
@@ -19,7 +20,24 @@ export default function Hero() {
         />
         <ContentContainer>
           <HiItem>Hi, I am</HiItem>
-          <EngineerName>Hadil Meddeb</EngineerName>
+          <EngineerName>
+            <Typewriter
+              words={[
+                "Hadil Meddeb",
+                "i'm a Frontend",
+                "Backend ",
+                "and iOS",
+                "Developer"
+              
+              ]}
+              loop={0} // play once
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1500} // wait before deleting
+            />
+          </EngineerName>
           <DescriptionText>
             {/* I am a full stack Developper focused on creating IOS mobile and web
             Applications that offers the best experience */}

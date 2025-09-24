@@ -1,9 +1,12 @@
 import { Bio } from "../../data/constants";
 import { IoMenu } from "react-icons/io5";
+import { DiCodeigniter } from "react-icons/di";
 
+import "./style.css";
 import {
   Nav,
   NavLink,
+  MobileMenuNavLink,
   NavbarContainer,
   Span,
   NavLogo,
@@ -11,9 +14,14 @@ import {
   GitHubButton,
   ButtonContainer,
   MobileIcon,
+  MobileMenu
 } from "./style";
+import { useState } from "react";
 
 export const Navbar = () => {
+
+  const [open,setOpen]= useState(false);
+
   return (
     <Nav>
       <NavbarContainer>
@@ -27,25 +35,34 @@ export const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <Span> {` </> `}Portfolio</Span>
+            <Span className="Navbar-title"> <DiCodeigniter/> Hadil</Span>
           </a>
         </NavLogo>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
-          <NavLink href="blogs">Blogs</NavLink>
+          <NavLink href="/#about">About</NavLink>
+          <NavLink href="/#skills">Skills</NavLink>
+          <NavLink href="/#experience">Experience</NavLink>
+          <NavLink href="/#projects">Projects</NavLink>
+          <NavLink href="/#education">Education</NavLink>
+          <NavLink href="/blogs">Blogs</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
             Github Profile
           </GitHubButton>
         </ButtonContainer>
-        <MobileIcon>
+        <MobileIcon onClick={()=>setOpen(!open)}>
           <IoMenu />
         </MobileIcon>
+        {open && (
+        <MobileMenu>
+          <MobileMenuNavLink href="/#about">About</MobileMenuNavLink>
+          <MobileMenuNavLink href="/#skills">Skills</MobileMenuNavLink>
+          <MobileMenuNavLink href="/#experience">Experience</MobileMenuNavLink>  
+          <MobileMenuNavLink href="/#projects">Projects</MobileMenuNavLink>
+          <MobileMenuNavLink href="/#education">Education</MobileMenuNavLink>
+          <MobileMenuNavLink href="/blogs">Blogs</MobileMenuNavLink> 
+        </MobileMenu>)}
       </NavbarContainer>
     </Nav>
   );

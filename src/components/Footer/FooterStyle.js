@@ -74,7 +74,6 @@ export const Column = styled.div`
   }
 `;
 
-
 export const PolicyTerms = styled.div`
   display: flex;
   flex-direction: column;

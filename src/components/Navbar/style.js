@@ -51,7 +51,7 @@ export const NavItems = styled.ul`
     padding: 0 6px;
     list-style: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 880px) {
       display: none;
     }
 `;
@@ -62,8 +62,8 @@ export const NavLink = styled.a`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    :hover {
-      color: ${({ theme }) => theme.primary};
+    &:hover {
+      color: red ${({ theme }) => theme.primary};
     }
 
     &.active {
@@ -90,7 +90,7 @@ export const GitHubButton = styled.a`
       background: ${({ theme }) => theme.primary};
       color: ${({ theme }) => theme.white};     
     }
-    @media screen and (max-width: 768px) { 
+    @media screen and (max-width: 880px) { 
     font-size: 14px;
     }
 `;
@@ -102,7 +102,7 @@ export const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   padding: 0 6px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 880px) {
     display: none;
   }
 `;
@@ -115,6 +115,42 @@ border: none;
   font-size: 28px;
   font-weight: 400;
   cursor: pointer;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 880px) {
     display: block;
   } `;
+
+  export const MobileMenu = styled.div`
+  display: none; 
+  width: 100%;
+  align-items: center;
+  text-align: center;
+
+  background: ${({ theme }) => theme.card_light};  
+  @media screen and (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: ${({ theme }) => theme.card};
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 10;
+  }`
+
+  export const MobileMenuNavLink = styled.a`
+    color: ${({ theme }) => theme.text_primary};
+    font-weight: 400;
+    font-size: 25px;
+    width: 100%;
+    border-bottom: 0.1px solid #37223eff;
+    padding: 30px 0px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    :hover {
+      color: ${({ theme }) => theme.primary};
+    }
+    &.active {
+      border-bottom: 2px solid ${({ theme }) => theme.primary};
+    }
+`;

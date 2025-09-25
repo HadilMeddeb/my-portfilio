@@ -19,7 +19,7 @@
     "styled-components": "^6.1.13",
     "swiper": "^12.0.2"
   },
-  "homepage": "https://yourusername.github.io/your-repo-name",
+  "homepage": "https://github.com/HadilMeddeb/my-portfilio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

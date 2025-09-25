@@ -7,7 +7,6 @@ export const Container = styled.div`
     rgba(132, 59, 206, 0.06) 5.71%,
     rgba(132, 59, 206, 0) 64.83%
   );
-    height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   @media only screen and (max-width: 950px) {
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 30px;
   }
 `;
 export const Icon = styled.span`

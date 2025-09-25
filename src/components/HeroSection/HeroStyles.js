@@ -32,7 +32,7 @@ export const Row = styled.div`
     width: 100%;
     flex-direction: column;
     padding-right: 10px;
-     padding-left: 10px;
+    padding-left: 10px;
   }
 `;
 
@@ -43,8 +43,9 @@ export const HiItem = styled.div`
   margin-bottom: 10px;
   letter-spacing: 3px;
   text-align: center;
+  @media (max-width: 500px) {
+    font-size: 50px;
 `;
-
 
 export const EngineerName = styled.div`
   font-size: 70px;
@@ -59,11 +60,14 @@ export const EngineerName = styled.div`
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #db7140; /* cursor */
-    @media (max-width: 1024px) {
-    
-    font-size: 50px;}
-`;
+  @media (max-width: 1024px) {
+    font-size: 50px;
+  }
 
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
+`;
 
 export const DescriptionText = styled.div`
   font-size: 22px;
@@ -75,6 +79,9 @@ export const DescriptionText = styled.div`
   margin-bottom: 20px;
   font-weight: 400;
   max-width: 500px;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 export const AvatarContainer = styled.div`

@@ -73,6 +73,11 @@ export const ServiceItem = styled.div`
      @media (max-width: 1300px) {
      padding: 20px 10px;
      }
+
+     
+     @media (max-width: 500px) {
+     padding:  10px;
+     }
      
 `;
 

@@ -2,6 +2,10 @@
 width:150px;
 height:150px;
 margin: 30px;
+@media screen and (max-width: 500px) {
+   width:100px; 
+   height: 100px;
+}
 }
 
 .btn-3d {

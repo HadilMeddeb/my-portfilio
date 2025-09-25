@@ -1,0 +1,48 @@
+.side-icon {
+width:150px;
+height:150px;
+margin: 30px;
+}
+
+.btn-3d {
+    text-decoration: none;
+    font-size: 18px;
+    max-width: 220px;
+    font-weight: 600;
+    padding: 14px 28px;
+    margin: 20px;
+    color: #fff;
+    background: linear-gradient(to bottom, #e36429, #c6480d);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 0 #b53e0b, 0 12px 24px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-3d:hover {
+    background: linear-gradient(to bottom, #f37130, #d55312);
+    box-shadow: 0 8px 0 #a83709, 0 14px 28px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-3d:active {
+    background: linear-gradient(to bottom, #c55317, #a02f08);
+    box-shadow: 0 3px 0 #802705, 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(4px);
+}
+
+
+.side-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+ 
+}
+  
+
+  .side-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.1);
+  }
+  

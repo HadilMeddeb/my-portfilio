@@ -1,0 +1,109 @@
+.mySwiper {
+  width: 80%;
+  height: 450px;
+  padding-bottom: 60px; 
+}
+
+.mySwiper .swiper-slide {
+  padding: 100px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #854ce6;
+  border-radius: 16px;
+  box-sizing: border-box;
+  box-shadow: rgba(23, 92, 230, 0.15) 4px 4px 24px;
+  color: #ffffff;
+}
+
+/* Position them */
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+/* Make dots bigger */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #854ce6; /* custom color */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #4a00e0;
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    width: 95%;
+    height: auto;
+  }
+  .mySwiper .swiper-slide {
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (max-width: 1600px) {
+  .mySwiper {
+    width: 95%;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+.img-container {
+  width: 55px;
+  height: 55px;
+  border: 2x solid #854ce6;
+  box-shadow: rgba(23, 92, 230, 0.15) 4px 4px 24px;
+  border-radius: 50%; /* use 50% for perfect circle */
+  overflow: hidden; /* ensures image stays inside circle */
+  display: flex; /* center the logo */
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 5px; /* optional: keeps a clean background */
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image proportional inside circle */
+}
+.position {
+  margin-bottom: 0px;
+}
+.date {
+  color: rgb(177, 170, 170);
+  margin-top: 5px;
+  font-size: 15px;
+}
+.company {
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: rgb(212, 126, 50);
+  font-weight: 500;
+}
+.job-type {
+  margin-top: 5px;
+  font-weight: 400;
+  color: #7a40df;
+}
+.description {
+  color: rgb(231, 228, 228);
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+  letter-spacing: 0.08rem;
+}
+.tech-logo {
+  width: 100%;
+  height: 100%;
+  fit-content: cover;
+}

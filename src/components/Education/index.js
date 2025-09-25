@@ -39,14 +39,13 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
+font-size: 40px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin: 20px 0px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
       margin-top: 12px;
-      font-size: 32px;
   }
 `;
 
@@ -56,7 +55,6 @@ const Desc = styled.div`
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary};
     @media (max-width: 768px) {
-        margin-top: 12px;
         font-size: 16px;
     }
 `;

@@ -26,7 +26,7 @@ export default function SkillsSection() {
 
   return (
     <MainContainer id="skills">
-      <SkillsTitle>My Skills</SkillsTitle>
+      <SkillsTitle> <span className='titleSpan'>My</span> Skills</SkillsTitle>
       <SkillsWrapper>
         <ListSkills>
           {doubledSkills.map((skill, index) => (

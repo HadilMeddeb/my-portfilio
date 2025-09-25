@@ -41,7 +41,6 @@ export const AboutTitle = styled.div`
   letter-spacing: 0.2rem;
 
   @media (max-width: 768px) {
-
     font-size: 42px;
     text-align: center;
     line-height: 3rem;
@@ -73,9 +72,13 @@ export const AboutText = styled.div`
   text-align: left;
   flex: 2;
   letter-spacing: 1px;
-  line-height: 2.3rem;
+  line-height: 2rem;
   @media (max-width: 768px) {
     text-align: center;
+  }
+  @media (max-width: 500px) {
+    text-align: center;
+    font-size: 16px;
   }
 `;
 export const AboutImage = styled.div`

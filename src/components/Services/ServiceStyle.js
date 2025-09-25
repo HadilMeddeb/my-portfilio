@@ -12,11 +12,14 @@ export const ServicesContainer = styled.div`
 `;
 export const ServicesTitle = styled.div`
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 40px;  
+
+    
   font-weight: bold;
   color: #ffffff;
   text-align: center;
 `;
+
 export const ServicesSubTitle = styled.div`
   margin-bottom: 15px;
   font-size: 25px;
@@ -76,7 +79,7 @@ export const ServiceItem = styled.div`
 
      
      @media (max-width: 500px) {
-     padding:  10px;
+     padding:  8px;
      }
      
 `;

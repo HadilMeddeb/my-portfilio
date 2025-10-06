@@ -159,7 +159,7 @@ export const Bio = {
       title: "GPROTasker",
       date: "April 2023 - August 2023",
       description:" web-based task tracking application for an IT services company, including : task management,project versions management, Workspaces management, meetings management through voting, minutesgeneration using either a text editor or voice input, integration with Trello, real-time notifications...",
-       demo:"assets/projects/GPRO-Tasker.mp4",
+       demo:"assets/GPRO-Tasker.mp4",
       image:
         "assets/projects/gproTasker.png",
       tags: [

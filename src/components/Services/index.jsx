@@ -26,7 +26,7 @@ export default function Services() {
       technologies: ["Express.js", "Node.js", "Flask", "python"],
     },
     {
-      title: "IOS Mobile Developer",
+      title: "IOS Mobile Apps Developer",
       text: "I develop smooth and user-friendly iOS apps",
       img: "assets/Services/ios.png",
       alt: "ios mobile icon",

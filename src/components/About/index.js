@@ -27,7 +27,7 @@ export default function About() {
           <div>
             As a software engineer, I build efficient, scalable solutions that
             solve real-world problems. I specialize in full-stack development
-            using React, Node.js, Express.js, Angular, Next.js, Python, and iOS.
+            using React, Node.js, Express.js, Angular, Next.js, Python, and swift swiftUI for IOS mobile Apps development.
             I write clean, maintainable code and continuously learn to adapt to
             the evolving tech landscape. Explore my work to see ideas
             transformed into impactful software.

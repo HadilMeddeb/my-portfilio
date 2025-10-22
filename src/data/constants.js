@@ -6,7 +6,7 @@ export const Bio = {
       "Programmer",
     ],
     description:
-    "I am a Fullstack JavaScript and iOS Developer, always eager for new challenges, I strive to make a meaningful impact."
+    "I am a Fullstack JavaScript and iOS Mobile apps Developer, always eager for new challenges, I strive to make a meaningful impact."
 , 
     github: "https://github.com/HadilMeddeb",
     resume:

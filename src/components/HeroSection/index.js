@@ -26,7 +26,7 @@ export default function Hero() {
                 "Hadil Meddeb",
                 "i'm a Frontend",
                 "Backend ",
-                "and iOS",
+                "and iOS Apps",
                 "Developer"
               
               ]}
